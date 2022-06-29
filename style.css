@@ -15,6 +15,12 @@ body p{
     color: hsl(208, 11%, 55%);
 }
 
+
+
+
+
+
+
 /*utility */
 
 .btn{
@@ -80,6 +86,10 @@ body p{
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    position: relative;
+    animation-name: animate-left;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
 }
 .cta-section h1{
     margin-bottom: 30px;
@@ -97,6 +107,10 @@ body p{
 }
 .head-mockup{
     margin-bottom: 20px;
+    position: relative;
+    animation-name: animate-right;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
 }
 
 
@@ -240,6 +254,24 @@ body p{
     text-decoration: underline;
 }
 
+
+/* animations */
+@keyframes animate-left{
+    0%{
+        left : -1000px;
+    }
+    100%{
+        left : 0;
+    }
+}
+@keyframes animate-right{
+    0%{
+        right : -1000px;
+    }
+    100%{
+        right : 0;
+    }
+}
 
 
 /* media queries */
