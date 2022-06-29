@@ -88,7 +88,7 @@ body p{
     margin-bottom: 50px;
     position: relative;
     animation-name: animate-left;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-timing-function: ease-in;
 }
 .cta-section h1{
@@ -132,7 +132,24 @@ body p{
     width: 90%;
     height: 300px;
     max-width: 450px;
+    position: relative;
 }
+.features-img:nth-of-type(1){
+    animation-name: animate-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+.features-img:nth-of-type(2){
+    animation-name: animate-left;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+.features-img:nth-of-type(3){
+    animation-name: animate-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
 .features-img img{
     width: 100%;
     height: auto;
@@ -140,7 +157,25 @@ body p{
 .features-text{
     text-align: center;
     padding-bottom: 30px;
+    position: relative;
 }
+.features-text:nth-of-type(1){
+    animation-name: animate-left;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+.features-text:nth-of-type(2){
+    animation-name: animate-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+.features-text:nth-of-type(3){
+    animation-name: animate-left;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+
+
 .features-text h2{
     margin-bottom: 20px;
     font-weight: 700;
